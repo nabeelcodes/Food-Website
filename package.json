@@ -1,0 +1,23 @@
+{
+   "name": "Food-Website",
+   "version": "1.0.0",
+   "description": "A very basic food website front end using Tailwind CSS",
+   "main": "index.js",
+   "scripts": {
+      "build-css-byTailwind": "tailwindcss build src/styles.css -o public/styles.css"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/skorpionHyphenS/Food-Website.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/skorpionHyphenS/Food-Website/issues"
+   },
+   "homepage": "https://github.com/skorpionHyphenS/Food-Website#readme",
+   "dependencies": {
+      "tailwindcss": "^2.0.3"
+   }
+}
