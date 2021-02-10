@@ -33,16 +33,18 @@
          </div>
 
          <!-- end of navbar and start of main section -->
-         <main class="px-16 py-6">
+         <main class="px-16 py-6 bg-gray-100">
             <!-- logIN and signUP section -->
-            <div>
+            <div class="flex justify-center md:justify-end">
                <a href="#" class="text-primary">Log In</a>
-               <a href="#" class="text-primary">Sign Up</a>
+               <a href="#" class="text-primary ml-2">Sign Up</a>
             </div>
 
             <!-- header for title -->
-            <h2 class="font-semibold">Recipes</h2>
-            <h3 class="font-semibold">for everyone</h3>
+            <header>
+               <h2 class="font-semibold">Recipes</h2>
+               <h3 class="font-semibold">for everyone</h3>
+            </header>
 
             <!-- cards for various recipes -->
             <div>
@@ -50,11 +52,14 @@
                <h4 class="font-bold mt-10 pb-2 border-b border-gray-200">Latest Recipes</h4>
                <!-- card body -->
                <div class="mt-8">
-                  <div>
-                     <img src="img/stew.jpg" alt="stew" />
-                     <div>
-                        <span>Chilli Bean Stew</span>
-                        <span>recipe by Mario</span>
+                  <!-- overflow hidden : to hide the corners of the image -->
+                  <!-- shadow-md : to add a drop shadow to the card element -->
+                  <div class="bg-white rounded-md overflow-hidden shadow-md">
+                     <!-- object-cover : to fit the image in the card -->
+                     <img src="img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover" />
+                     <div class="m-4">
+                        <span class="font-bold">Chilli Bean Stew</span>
+                        <span class="block text-sm text-gray-500">recipe by Mario</span>
                      </div>
                   </div>
                </div>
@@ -68,8 +73,9 @@
             </div>
 
             <!-- load more button -->
-            <div>
-               <div class="text-secondary-200 bg-secondary-100">Load More</div>
+            <div class="flex justify-center">
+               <!-- <div class="text-secondary-200 bg-secondary-100 px-3 py-1.5 rounded-3xl">Load More...</div> -->
+               <button href="#" class="text-secondary-200 bg-secondary-100 px-3 py-1.5 rounded-3xl">Load More...</button>
             </div>
          </main>
       </div>
