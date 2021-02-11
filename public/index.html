@@ -9,9 +9,9 @@
    </head>
    <body class="font-custom_font">
       <!-- main content wrapper -->
-      <div class="text-gray-600">
+      <div class="text-gray-600 grid md:grid-cols-5">
          <!-- div for the nav -->
-         <div>
+         <div class="md:col-span-1">
             <nav>
                <div>
                   <h1 class="font-bold uppercase border-b border-gray-100 p-4">
@@ -33,17 +33,17 @@
          </div>
 
          <!-- end of navbar and start of main section -->
-         <main class="px-16 py-6 bg-gray-100">
+         <main class="px-16 py-6 bg-gray-100 md:col-span-4">
             <!-- logIN and signUP section -->
             <div class="flex justify-center md:justify-end">
-               <a href="#" class="text-primary">Log In</a>
-               <a href="#" class="text-primary ml-2">Sign Up</a>
+               <a href="#" class="btn text-primary border-primary md:border-2">Log In</a>
+               <a href="#" class="btn text-primary ml-2 border-primary md:border-2">Sign Up</a>
             </div>
 
             <!-- header for title -->
             <header>
-               <h2 class="font-semibold">Recipes</h2>
-               <h3 class="font-semibold">for everyone</h3>
+               <h2 class="font-semibold text-gray-700 text-6xl">Recipes</h2>
+               <h3 class="font-semibold text-2xl">for everyone</h3>
             </header>
 
             <!-- cards for various recipes -->
@@ -51,22 +51,83 @@
                <!-- card title -->
                <h4 class="font-bold mt-10 pb-2 border-b border-gray-200">Latest Recipes</h4>
                <!-- card body -->
-               <div class="mt-8">
-                  <!-- overflow hidden : to hide the corners of the image -->
-                  <!-- shadow-md : to add a drop shadow to the card element -->
-                  <div class="bg-white rounded-md overflow-hidden shadow-md">
+               <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                  <!-- card 1 -->
+                  <div class="card">
                      <!-- object-cover : to fit the image in the card -->
                      <img src="img/stew.jpg" alt="stew" class="w-full h-32 sm:h-48 object-cover" />
                      <div class="m-4">
                         <span class="font-bold">Chilli Bean Stew</span>
                         <span class="block text-sm text-gray-500">recipe by Mario</span>
                      </div>
+                     <!-- time-duration badge -->
+                     <div class="badge">
+                        <!-- clock icon -->
+                        <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                           ></path>
+                        </svg>
+                        <!-- cooking time -->
+                        <span>40 mins</span>
+                     </div>
+                  </div>
+
+                  <!-- card 2 -->
+                  <div class="card">
+                     <!-- object-cover : to fit the image in the card -->
+                     <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 sm:h-48 object-cover" />
+                     <div class="m-4">
+                        <span class="font-bold">Veg Noodles</span>
+                        <span class="block text-sm text-gray-500">recipe by Vanessa</span>
+                     </div>
+                     <!-- time-duration badge -->
+                     <div class="badge">
+                        <!-- clock icon -->
+                        <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                           ></path>
+                        </svg>
+                        <!-- cooking time -->
+                        <span>25 mins</span>
+                     </div>
+                  </div>
+
+                  <!-- card 3 -->
+                  <div class="card">
+                     <!-- object-cover : to fit the image in the card -->
+                     <img src="img/curry.jpg" alt="curry" class="w-full h-32 sm:h-48 object-cover" />
+                     <div class="m-4">
+                        <span class="font-bold">Tofu Curry</span>
+                        <span class="block text-sm text-gray-500">recipe by Jordan</span>
+                     </div>
+                     <!-- time-duration badge -->
+                     <div class="badge">
+                        <!-- clock icon -->
+                        <svg class="w-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                           ></path>
+                        </svg>
+                        <!-- cooking time -->
+                        <span>33 mins</span>
+                     </div>
                   </div>
                </div>
 
-               <!-- card title -->
+               <!-- another card title -->
                <h4 class="font-bold mt-10 pb-2 border-b border-gray-200">Most Popular Recipes</h4>
-               <!-- card body -->
+               <!-- another card body -->
                <div class="mt-8">
                   <!-- another card goes here -->
                </div>
@@ -75,7 +136,7 @@
             <!-- load more button -->
             <div class="flex justify-center">
                <!-- <div class="text-secondary-200 bg-secondary-100 px-3 py-1.5 rounded-3xl">Load More...</div> -->
-               <button href="#" class="text-secondary-200 bg-secondary-100 px-3 py-1.5 rounded-3xl">Load More...</button>
+               <button href="#" class="btn text-secondary-200 bg-secondary-100">Load More...</button>
             </div>
          </main>
       </div>

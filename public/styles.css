@@ -1,4 +1,4 @@
-/* custom fonts */
+/* custom fonts from google */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
@@ -31710,6 +31710,53 @@ video {
 .animate-bounce{
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+/* custom selectors and @apply-directives */
+
+.card {
+  /* overflow hidden : to hide the corners of the image
+    shadow-md : to add a drop shadow to the card element
+    relative : relative position for time-duration badge */
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  border-radius: 0.375rem;
+  overflow: hidden;
+  position: relative;
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.badge {
+  /* absolute : for absolute position wrt the card */
+  --tw-bg-opacity: 1;
+  background-color: rgba(226, 226, 213, var(--tw-bg-opacity));
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.375rem;
+  position: absolute;
+  top: 0px;
+  --tw-text-opacity: 1;
+  color: rgba(136, 136, 131, var(--tw-text-opacity));
+  text-transform: uppercase;
+}
+
+.btn {
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 @media (min-width: 640px){

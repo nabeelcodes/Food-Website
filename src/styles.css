@@ -1,6 +1,23 @@
-/* custom fonts */
+/* custom fonts from google */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom selectors and @apply-directives */
+.card {
+   /* overflow hidden : to hide the corners of the image
+    shadow-md : to add a drop shadow to the card element
+    relative : relative position for time-duration badge */
+   @apply bg-white rounded-md overflow-hidden shadow-md relative;
+}
+
+.badge {
+   /* absolute : for absolute position wrt the card */
+   @apply bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full absolute top-0 p-1.5 mt-2 ml-2;
+}
+
+.btn {
+   @apply text-xs font-bold rounded-full px-3 py-2 uppercase cursor-pointer tracking-wider;
+}
